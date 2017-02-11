@@ -1,6 +1,6 @@
 # rb-urlvoid
 
-rb-urlvoid is a yet another [URLVoid](http://www.urlvoid.com/) API gem.
+Yet another Ruby Gem for [URLVoid](http://www.urlvoid.com/) API.
 
 ## Installation
 
@@ -23,27 +23,27 @@ $ gem install rb-urlvoid
 $ urlvoid [options]
 ```
 
-** Create your configuration file **
+### Create your configuration file
 
 ```bash
 $ urlvoid create_config
 ```
 
-** Edit your configuration file with API KEY **
+### Edit your configuration file with API KEY
 
 ```bash
 $ $EDITOR ~/.urlvoid.yml
 ```
 
-** Alternatively you can set Environment variables without a config file **
+### Alternatively you can set Environment variables without a config file
 
 ```bash
 $ export URLVOID_API_KEY=<YOUR_API_KEY_HERE>
 ```
 
-## Usage
+## CLI Usage
 
-** Retrieve information about a specific website **
+### Retrieve information about a specific website
 
 ```bash
 $ urlvoid info malicious.com
@@ -87,7 +87,7 @@ $ urlvoid info malicious.com
 }
 ```
 
-** Rescan of a specific website **
+### Rescan of a specific website
 
 ```bash
 $ urlvoid rescan example.com
@@ -125,7 +125,7 @@ $ urlvoid rescan example.com
 }
 ```
 
-** Scan a new website not present in the URLVoid's database **
+### Scan a new website not present in the URLVoid's database
 
 ```bash
 $ urlvoid new_sacan unkown.com
