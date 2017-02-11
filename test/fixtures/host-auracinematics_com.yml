@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.urlvoid.com/api1000/test_key/host/auracinematics.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client
+      Host:
+      - api.urlvoid.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 09 Feb 2017 21:01:47 GMT
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <response>
+        <details>
+          <host>auracinematics .com</host>
+          <updated>1400599555</updated>
+          <http_response_code>200</http_response_code>
+          <domain_age>1248148800</domain_age>
+          <google_page_rank>0</google_page_rank>
+          <alexa_rank>12759404</alexa_rank>
+          <connect_time>0.117913</connect_time>
+          <header_size>306</header_size>
+          <download_size>2033</download_size>
+          <speed_download>7495</speed_download>
+          <external_url_redirect>-</external_url_redirect>
+          <ip>
+              <addr>204.11.59. 216</addr>
+              <hostname>204.11.59-216.confluence-networks .com</hostname>
+              <asn>40034</asn>
+              <asname>Confluence Networks Inc</asname>
+              <country_code>VG</country_code>
+              <country_name>Virgin Islands, British</country_name>
+              <region_name>-</region_name>
+              <city_name>Road Town</city_name>
+              <continent_code>NA</continent_code>
+              <continent_name>North America</continent_name>
+              <latitude>18.4167</latitude>
+              <longitude>-64.6167</longitude>
+          </ip>
+        </details>
+        <detections>
+            <engines>
+                <engine>MyWOT</engine>
+                <engine>SCUMWARE</engine>
+                <engine>SURBL</engine>
+                <engine>URLVir</engine>
+                <engine>ThreatLog</engine>
+                <engine>DrWeb</engine>
+                <engine>z_protect</engine>
+                <engine>CRDF</engine>
+            </engines>
+            <count>8</count>
+        </detections>
+        <page_load>0.00</page_load>
+        </response>
+    http_version:
+  recorded_at: Thu, 09 Feb 2017 21:01:47 GMT
+recorded_with: VCR 3.0.3

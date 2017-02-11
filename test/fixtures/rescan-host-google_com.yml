@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.urlvoid.com/api1000/test_key/host/google.com/rescan/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client
+      Host:
+      - api.urlvoid.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 09 Feb 2017 21:27:11 GMT
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <response>
+        <details>
+         <host>google.com</host>
+         <updated>1486675618</updated>
+         <http_response_code>0</http_response_code>
+         <domain_age>874296000</domain_age>
+         <google_page_rank>0</google_page_rank>
+         <alexa_rank>0</alexa_rank>
+         <connect_time>0</connect_time>
+         <header_size>0</header_size>
+         <download_size>0</download_size>
+         <speed_download>0</speed_download>
+         <external_url_redirect></external_url_redirect>
+         <ip>
+        <addr>216.58.198.206</addr>
+        <hostname>par10s27-in-f14.1e100.net</hostname>
+        <asn>15169</asn>
+        <asname>Google Inc.</asname>
+        <country_code>US</country_code>
+        <country_name>United States</country_name>
+        <region_name>California</region_name>
+        <city_name>Mountain View</city_name>
+        <continent_code>NA</continent_code>
+        <continent_name>North America</continent_name>
+        <latitude>37.4192</latitude>
+        <longitude>-122.057</longitude>
+         </ip>
+        </details>
+        <action_result>OK</action_result><page_load>13.17</page_load>
+        </response>
+    http_version:
+  recorded_at: Thu, 09 Feb 2017 21:27:12 GMT
+recorded_with: VCR 3.0.3
