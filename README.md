@@ -1,4 +1,5 @@
 # rb-urlvoid
+[![Code Climate](https://codeclimate.com/github/ninoseki/rb-urlvoid/badges/gpa.svg)](https://codeclimate.com/github/ninoseki/rb-urlvoid)
 
 Yet another Ruby Gem for [URLVoid](http://www.urlvoid.com/) API.
 
