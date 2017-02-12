@@ -1,5 +1,6 @@
 # rb-urlvoid
 [![Code Climate](https://codeclimate.com/github/ninoseki/rb-urlvoid/badges/gpa.svg)](https://codeclimate.com/github/ninoseki/rb-urlvoid)
+![TravisCI](https://travis-ci.org/ninoseki/rb-urlvoid.svg?branch=master)
 
 Yet another Ruby Gem for [URLVoid](http://www.urlvoid.com/) API.
 
