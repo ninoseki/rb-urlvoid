@@ -65,11 +65,10 @@ describe "URLVoid::CLI" do
       ENV["URLVOID_API_KEY"] = "test_key"
       ENV["URLVOID_IDENTIFIER"] = "api1000"
       VCR.use_cassette("host-google.com") do
-        FakeFS do
-          out = capture_io { URLVoid::CLI.new.invoke("info", ["google.com"]) }
-          # IO output returns as an Array
-          JSON.parse(out.first).must_be_instance_of Hash
-        end
+        out = capture_io { URLVoid::CLI.new.invoke("info", ["google.com"]) }
+        # IO output returns as an Array
+        json = JSON.parse(out.first)
+        json["details"]["host"].must_equal "google.com"
       end
     end
 

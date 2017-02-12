@@ -12,7 +12,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
-      - rest-client/2.0.0 (darwin16.3.0 x86_64) ruby/2.4.0p0
+      - rest-client
       Host:
       - api.urlvoid.com
   response:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 12 Feb 2017 08:45:25 GMT
+      - Thu, 09 Feb 2017 21:01:47 GMT
       Content-Type:
       - text/xml;charset=UTF-8
       Transfer-Encoding:
@@ -35,9 +35,35 @@ http_interactions:
       string: |
         <?xml version="1.0" encoding="UTF-8"?>
         <response>
-        <error>Error: API key is not valid</error>
-        <page_load>0.00</page_load>
+        <details>
+         <host>google.com</host>
+         <updated>1486639126</updated>
+         <http_response_code>0</http_response_code>
+         <domain_age>874296000</domain_age>
+         <google_page_rank>0</google_page_rank>
+         <alexa_rank>0</alexa_rank>
+         <connect_time>0</connect_time>
+         <header_size>0</header_size>
+         <download_size>0</download_size>
+         <speed_download>0</speed_download>
+         <external_url_redirect></external_url_redirect>
+         <ip>
+        <addr>216.58.204.110</addr>
+        <hostname>par10s28-in-f14.1e100.net</hostname>
+        <asn>15169</asn>
+        <asname>Google Inc.</asname>
+        <country_code>US</country_code>
+        <country_name>United States</country_name>
+        <region_name>California</region_name>
+        <city_name>Mountain View</city_name>
+        <continent_code>NA</continent_code>
+        <continent_name>North America</continent_name>
+        <latitude>37.4192</latitude>
+        <longitude>-122.057</longitude>
+         </ip>
+        </details>
+        <page_load>0.01</page_load>
         </response>
-    http_version: 
-  recorded_at: Sun, 12 Feb 2017 08:45:25 GMT
+    http_version:
+  recorded_at: Thu, 09 Feb 2017 21:01:47 GMT
 recorded_with: VCR 3.0.3
